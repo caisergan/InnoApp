@@ -1,0 +1,87 @@
+﻿@model IEnumerable<InnoMvc.Models.UserViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<script type="text/javascript">
+    function confirmDelete(id) {
+        if (confirm("Are you sure you want to delete this item?")) {
+            // If confirmed, submit the form to delete the item
+            document.getElementById('deleteForm-' + id).submit();
+        }
+    }
+</script>
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+    <a asp-action="Login">Login</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ADI)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SOYADI)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KULLANICI_ADI)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+            @if (ViewBag.token == null)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ADI)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SOYADI)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.KULLANICI_ADI)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                        <!-- Delete Action -->
+                        <form id="deleteForm-@item.ID" method="post" action="@Url.Action("Delete", new { id = item.ID })" style="display:inline;">
+                            <a href="javascript:void(0);" onclick="confirmDelete('@item.ID')">Delete</a>
+                        </form>
+
+
+                    </td>
+                </tr>
+            }
+            else
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ADI)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SOYADI)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.KULLANICI_ADI)
+                    </td>
+                </tr>
+            }
+
+        }
+    </tbody>
+</table>

@@ -1,0 +1,39 @@
+﻿@model InnoMvc.Models.UserViewModel
+
+@{
+    ViewData["Title"] = "Edit User";
+}
+
+<h2>Edit User</h2>
+
+<form asp-action="Edit">
+    <div class="form-group">
+        <label asp-for="ADI" class="control-label"></label>
+        <input asp-for="ADI" class="form-control" />
+        <span asp-validation-for="ADI" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="SOYADI" class="control-label"></label>
+        <input asp-for="SOYADI" class="form-control" />
+        <span asp-validation-for="SOYADI" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="KULLANICI_ADI" class="control-label"></label>
+        <input asp-for="KULLANICI_ADI" class="form-control" />
+        <span asp-validation-for="KULLANICI_ADI" class="text-danger"></span>
+    </div>
+    <input type="hidden" asp-for="ID" />
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-primary" />
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

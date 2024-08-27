@@ -1,0 +1,38 @@
+﻿@model IEnumerable<InnoMvc.Models.AppUserViewModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container mt-5">
+    <div class="text-center">
+        @if (ViewBag.token != null)
+        {
+            <h2 class="mb-4">Welcome <code>@ViewBag.Username</code></h2>
+        }
+        else
+        {
+            <h2 class="mb-4">Welcome To The Home Page</h2>
+        }
+
+
+        @if (ViewBag.Token != null)
+        {
+            <div class="alert alert-success" role="alert">
+                <h4 class="alert-heading">Token Received!</h4>
+                <p>Your token is:</p>
+                <div class="bg-dark text-white p-3 rounded">
+                    <code>@ViewBag.Token</code>
+                </div>
+                <hr>
+                <p class="mb-0">Keep this token safe for further use.</p>
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-warning" role="alert">
+                <p>No token found.</p>
+            </div>
+        }
+    </div>
+</div>
+

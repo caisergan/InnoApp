@@ -1,0 +1,65 @@
+﻿@model InnoMvc.Models.AppUserViewModel
+@{
+    ViewData["Title"] = "User Authentication";
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <ul class="nav nav-tabs" id="authTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">Login</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab" aria-controls="register" aria-selected="false">Create Account</button>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="authTabContent">
+        <!-- Login Form -->
+        <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+            <form id="loginForm" method="post" asp-action="Login">
+                <h2>Login</h2>
+                <hr />
+                <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                <div class="form-floating mb-3">
+                    <input asp-for="UserName" class="form-control" autocomplete="username" aria-required="true" placeholder="Username" />
+                    <label asp-for="UserName">Username</label>
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3">
+                    <input asp-for="PasswordHash" class="form-control" autocomplete="current-password" aria-required="true" placeholder="Password" type="password" />
+                    <label asp-for="PasswordHash">Password</label>
+                    <span asp-validation-for="PasswordHash" class="text-danger"></span>
+                </div>
+                <button type="submit" class="w-100 btn btn-lg btn-primary">Login</button>
+            </form>
+        </div>
+
+        <!-- Register Form -->
+        <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+            <form id="registerForm" method="post" asp-action="CreateUser">
+                <h2>Create a new account</h2>
+                <hr />
+                <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                <div class="form-floating mb-3">
+                    <input asp-for="UserName" class="form-control" autocomplete="on" aria-required="true" placeholder="Username" />
+                    <label asp-for="UserName">Username</label>
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3">
+                    <input asp-for="Email" class="form-control" autocomplete="on" aria-required="true" placeholder="Email" />
+                    <label asp-for="Email">Email</label>
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3">
+                    <input asp-for="PasswordHash" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Password" type="password" />
+                    <label asp-for="PasswordHash">Password</label>
+                    <span asp-validation-for="PasswordHash" class="text-danger"></span>
+                </div>
+                <button type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
