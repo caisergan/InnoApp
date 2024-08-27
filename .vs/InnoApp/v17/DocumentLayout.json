@@ -1,7 +1,40 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\EGE\\Desktop\\InnoApp\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{430E5CD6-DF28-4541-88D2-382C7E896AE9}|InnoMvc\\InnoMvc.csproj|c:\\users\\ege\\desktop\\innoapp\\innomvc\\controllers\\appusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{430E5CD6-DF28-4541-88D2-382C7E896AE9}|InnoMvc\\InnoMvc.csproj|solutionrelative:innomvc\\controllers\\appusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69DC7752-226D-4AEC-9E20-CF2D6471A3A7}|InnoApi\\InnoApi.csproj|c:\\users\\ege\\desktop\\innoapp\\innoapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69DC7752-226D-4AEC-9E20-CF2D6471A3A7}|InnoApi\\InnoApi.csproj|solutionrelative:innoapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{430E5CD6-DF28-4541-88D2-382C7E896AE9}|InnoMvc\\InnoMvc.csproj|c:\\users\\ege\\desktop\\innoapp\\innomvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{430E5CD6-DF28-4541-88D2-382C7E896AE9}|InnoMvc\\InnoMvc.csproj|solutionrelative:innomvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{430E5CD6-DF28-4541-88D2-382C7E896AE9}|InnoMvc\\InnoMvc.csproj|c:\\users\\ege\\desktop\\innoapp\\innomvc\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{430E5CD6-DF28-4541-88D2-382C7E896AE9}|InnoMvc\\InnoMvc.csproj|solutionrelative:innomvc\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{430E5CD6-DF28-4541-88D2-382C7E896AE9}|InnoMvc\\InnoMvc.csproj|c:\\users\\ege\\desktop\\innoapp\\innomvc\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{430E5CD6-DF28-4541-88D2-382C7E896AE9}|InnoMvc\\InnoMvc.csproj|solutionrelative:innomvc\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{430E5CD6-DF28-4541-88D2-382C7E896AE9}|InnoMvc\\InnoMvc.csproj|c:\\users\\ege\\desktop\\innoapp\\innomvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{430E5CD6-DF28-4541-88D2-382C7E896AE9}|InnoMvc\\InnoMvc.csproj|solutionrelative:innomvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{430E5CD6-DF28-4541-88D2-382C7E896AE9}|InnoMvc\\InnoMvc.csproj|c:\\users\\ege\\desktop\\innoapp\\innomvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{430E5CD6-DF28-4541-88D2-382C7E896AE9}|InnoMvc\\InnoMvc.csproj|solutionrelative:innomvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{430E5CD6-DF28-4541-88D2-382C7E896AE9}|InnoMvc\\InnoMvc.csproj|c:\\users\\ege\\desktop\\innoapp\\innomvc\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{430E5CD6-DF28-4541-88D2-382C7E896AE9}|InnoMvc\\InnoMvc.csproj|solutionrelative:innomvc\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +51,110 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppUserController.cs",
+              "DocumentMoniker": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoMvc\\Controllers\\AppUserController.cs",
+              "RelativeDocumentMoniker": "InnoMvc\\Controllers\\AppUserController.cs",
+              "ToolTip": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoMvc\\Controllers\\AppUserController.cs",
+              "RelativeToolTip": "InnoMvc\\Controllers\\AppUserController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T14:41:38.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoMvc\\Program.cs",
+              "RelativeDocumentMoniker": "InnoMvc\\Program.cs",
+              "ToolTip": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoMvc\\Program.cs",
+              "RelativeToolTip": "InnoMvc\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T14:16:10.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoMvc\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "InnoMvc\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoMvc\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "InnoMvc\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T14:15:08.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoMvc\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "InnoMvc\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoMvc\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "InnoMvc\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-27T14:06:26.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoMvc\\Views\\Auth\\Register.cshtml",
+              "RelativeDocumentMoniker": "InnoMvc\\Views\\Auth\\Register.cshtml",
+              "ToolTip": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoMvc\\Views\\Auth\\Register.cshtml",
+              "RelativeToolTip": "InnoMvc\\Views\\Auth\\Register.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-27T13:46:46.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoApi\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "InnoApi\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoApi\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "InnoApi\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAIMAAAAAAAAAAAAAAKQAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:32:26.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoMvc\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "InnoMvc\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoMvc\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "InnoMvc\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowBkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:28:55.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoMvc\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "InnoMvc\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoMvc\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "InnoMvc\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AQIAABwAAAAAAAAAAAAkwEEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-27T13:27:17.252Z",
+              "EditorCaption": ""
             }
           ]
         }

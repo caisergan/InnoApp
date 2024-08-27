@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InnoMvc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a46837e4e15b2d505cb033a6e67dc2ea17e0e46")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5471e42cc323b6e29f29965cf9539cfe3594f838")]
 [assembly: System.Reflection.AssemblyProductAttribute("InnoMvc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InnoMvc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

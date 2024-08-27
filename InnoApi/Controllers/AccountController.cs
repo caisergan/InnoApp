@@ -162,7 +162,6 @@ namespace InnoApi.Controllers
 
             byte[] passwordBytes = Encoding.UTF8.GetBytes(loginDto.PasswordHash);
             string base64Password = Convert.ToBase64String(passwordBytes);
-            //var passwordHasher = new PasswordHasher<AppUserModel>();
             var hashedPassword = base64Password;
             if (hashedPassword != user.PasswordHash)
             {
@@ -185,11 +184,11 @@ namespace InnoApi.Controllers
             {
                 if (!ModelState.IsValid)
                     return BadRequest(ModelState);
-                //string hashedPassword = _passwordHashing.HashPassword(registerDto.PasswordHash);
+
                 byte[] passwordBytes = Encoding.UTF8.GetBytes(registerDto.PasswordHash);
 
                 string base64Password = Convert.ToBase64String(passwordBytes);
-                //var passwordHasher = new PasswordHasher<AppUserModel>();
+
                 var hashedPassword = base64Password;
                 var appUser = new AppUserModel
                 {
@@ -198,7 +197,7 @@ namespace InnoApi.Controllers
                     PasswordHash = hashedPassword,
                 };
 
-                //var createdUser = await _userManager.CreateAsync(appUser); // Pass password separately
+
                 IdentityResult result = await _userManager.CreateAsync(appUser);
 
                 if (result.Succeeded)
@@ -227,7 +226,6 @@ namespace InnoApi.Controllers
             }
             catch (Exception e)
             {
-                // Log the exception
                 return StatusCode(500, new { message = "An error occurred while processing your request.", exception = e.Message });
             }
         }

@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Index";
+    var searchString = ViewData["SearchString"] as string;
 }
 <script type="text/javascript">
     function confirmDelete(id) {
@@ -11,12 +12,17 @@
         }
     }
 </script>
-<h1>Index</h1>
+<h1>Users</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-    <a asp-action="Login">Login</a>
-</p>
+<form method="get" action="@Url.Action("Index")" class="row">
+    <div class="col-auto">
+        <input type="text" name="searchString" placeholder="Search..." value="@searchString" class="form-control" />
+    </div>
+    <div class="col-auto">
+        <button type="submit" class="btn btn-primary">Search</button>
+    </div>
+</form>
+
 <table class="table">
     <thead>
         <tr>
@@ -37,9 +43,10 @@
     </thead>
     <tbody>
 @foreach (var item in Model) {
-            @if (ViewBag.token == null)
+            @if (ViewBag.token != null)
             {
                 <tr>
+
                     <td>
                         @Html.DisplayFor(modelItem => item.ID)
                     </td>
@@ -54,13 +61,10 @@
                     </td>
                     <td>
                         @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-                        @Html.ActionLink("Details", "Details", new { id = item.ID }) |
                         <!-- Delete Action -->
                         <form id="deleteForm-@item.ID" method="post" action="@Url.Action("Delete", new { id = item.ID })" style="display:inline;">
                             <a href="javascript:void(0);" onclick="confirmDelete('@item.ID')">Delete</a>
                         </form>
-
-
                     </td>
                 </tr>
             }
@@ -84,4 +88,10 @@
 
         }
     </tbody>
+
+
 </table>
+@if (ViewBag.token != null)
+{
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+}

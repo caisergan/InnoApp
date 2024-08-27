@@ -13,6 +13,7 @@ namespace InnoApi.Controllers
         {
             _context = context;
         }
+
         [HttpGet]
         public IActionResult GetAll()
         {
@@ -20,6 +21,7 @@ namespace InnoApi.Controllers
                 .Select(u => u.ToUserDto());
             return Ok(users);
         }
+
         [HttpGet("{ID}")]
         public IActionResult GetById([FromRoute] int ID)
         {
@@ -32,13 +34,22 @@ namespace InnoApi.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create([FromBody] CreateUserRequestDto userDto)
+        public IActionResult Create([FromBody] List<CreateUserRequestDto> userDtos)
         {
-            var userModel = userDto.ToUserFromCreateDTO();
-            _context.Users.Add(userModel);
+            if (userDtos == null || !userDtos.Any())
+            {
+                return BadRequest("No user data provided.");
+            }
+
+            foreach (var userDto in userDtos)
+            {
+                var userModel = userDto.ToUserFromCreateDTO();
+                _context.Users.Add(userModel);
+            }
+
             _context.SaveChanges();
 
-            return CreatedAtAction(nameof(GetById), new { id = userModel.ID}, userModel.ToUserDto());
+            return Ok(new { message = $"{userDtos.Count} users created successfully." });
         }
 
         [HttpPut]

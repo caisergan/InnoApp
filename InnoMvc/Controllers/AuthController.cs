@@ -24,7 +24,6 @@ namespace InnoMvc.Controllers
 
             HttpContext.SignOutAsync();
 
-            // Redirect to the login page or home page after logout
             return RedirectToAction("Index", "Home");
         }
         [HttpGet]
@@ -76,15 +75,17 @@ namespace InnoMvc.Controllers
                 string data = JsonConvert.SerializeObject(appUserViewModel);
                 StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
                 HttpResponseMessage response = _httpClient.PostAsync("https://localhost:7288/api/account/register", content).Result;
+
                 if (response.IsSuccessStatusCode)
                 {
+
                     string responseBody = await response.Content.ReadAsStringAsync();
                     dynamic jsonResponse = JsonConvert.DeserializeObject(responseBody);
                     string token = jsonResponse.token;
-                    string username = jsonResponse.username;    
-                    HttpContext.Session.SetString("token", token);
-                    HttpContext.Session.SetString("username", username);
+                    string username = jsonResponse.userName;
 
+                    HttpContext.Session.SetString("token", token);
+                    HttpContext.Session.SetString("userName", username);
 
                     return RedirectToAction("Index", "Home");
                 }

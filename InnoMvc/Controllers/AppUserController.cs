@@ -16,18 +16,29 @@ namespace InnoMvc.Controllers
         {
             _httpClient = new HttpClient();
             _httpClient.BaseAddress = baseAddress;
+
         }
         [HttpGet]
-        public IActionResult Index()
+        public IActionResult Index(string searchString)
         {
+            string token = HttpContext.Session.GetString("token");
+            ViewBag.Token = token;
             List<UserViewModel> userlist = new List<UserViewModel>();
             HttpResponseMessage response = _httpClient.GetAsync("https://localhost:7288/InnoApi/user").Result;
             if (response.IsSuccessStatusCode)
             {
                 string data = response.Content.ReadAsStringAsync().Result;
                 userlist = JsonConvert.DeserializeObject<List<UserViewModel>>(data);
+                if (!string.IsNullOrEmpty(searchString))
+                {
+                    userlist = userlist.Where(u => u.ADI.Contains(searchString, StringComparison.OrdinalIgnoreCase) ||
+                                                    u.SOYADI.Contains(searchString, StringComparison.OrdinalIgnoreCase) ||
+                                                    u.KULLANICI_ADI.Contains(searchString, StringComparison.OrdinalIgnoreCase)).ToList();
+                }
             }
+            ViewData["SearchString"] = searchString;
             return View(userlist);
+
         }
 
         [HttpGet]
