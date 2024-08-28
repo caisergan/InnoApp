@@ -1,0 +1,52 @@
+﻿@model InnoMvc.Models.AppUserViewModel
+
+@{
+    ViewData["Title"] = "Edit User Information";
+}
+
+<h1>Edit User Information</h1>
+
+<form asp-action="Edit">
+    <div class="form-group">
+        <label asp-for="UserName" class="control-label"></label>
+
+        <div class="input-group  col-md-3">
+            <input asp-for="UserName" class="form-control" style=" disabled="disabled" id="UserNameInput" />
+            <div class="input-group-append">
+                <button type="button" class="btn btn-warning" onclick="enableEditing('UserNameInput')">Edit</button>
+            </div>
+        </div>
+        <span asp-validation-for="UserName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Email" class="control-label"></label>
+
+        <div class="input-group">
+            <input asp-for="Email" class="form-control" disabled="disabled" id="EmailInput" />
+            <div class="input-group-append">
+                <button type="button" class="btn btn-warning" onclick="enableEditing('EmailInput')">Edit</button>
+            </div>
+        </div>
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-primary" />
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    </div>
+</form>
+
+@section Scripts {
+    <script>
+        function enableEditing(inputId) {
+            var inputElement = document.getElementById(inputId);
+            if (inputElement.disabled) {
+                inputElement.disabled = false;
+                inputElement.focus();
+            } else {
+                inputElement.disabled = true;
+            }
+        }
+    </script>
+}

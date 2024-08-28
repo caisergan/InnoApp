@@ -16,7 +16,6 @@ namespace InnoMvc.Controllers
         {
             _httpClient = new HttpClient();
             _httpClient.BaseAddress = baseAddress;
-
         }
         [HttpGet]
         public IActionResult Index(string searchString)

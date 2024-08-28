@@ -20,6 +20,10 @@
     </div>
     <div class="col-auto">
         <button type="submit" class="btn btn-primary">Search</button>
+        @if (ViewBag.token != null)
+        {
+            <a asp-action="Create" class="btn btn-primary">Create New User</a>
+        }
     </div>
 </form>
 
@@ -60,10 +64,10 @@
                         @Html.DisplayFor(modelItem => item.KULLANICI_ADI)
                     </td>
                     <td>
-                        @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                        <a href="@Url.Action("Edit", "AppUser", new { id = item.ID })" class="btn btn-primary">Edit</a>
                         <!-- Delete Action -->
                         <form id="deleteForm-@item.ID" method="post" action="@Url.Action("Delete", new { id = item.ID })" style="display:inline;">
-                            <a href="javascript:void(0);" onclick="confirmDelete('@item.ID')">Delete</a>
+                            <button type="button" class="btn btn-danger" onclick="confirmDelete('@item.ID')">Delete</button>
                         </form>
                     </td>
                 </tr>
@@ -91,7 +95,3 @@
 
 
 </table>
-@if (ViewBag.token != null)
-{
-    <a asp-action="Create" class="btn btn-primary">Create New</a>
-}
