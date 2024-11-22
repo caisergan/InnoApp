@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\EGE\\Desktop\\InnoApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{69DC7752-226D-4AEC-9E20-CF2D6471A3A7}|InnoApi\\InnoApi.csproj|c:\\users\\ege\\desktop\\innoapp\\innoapi\\dtos\\account\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69DC7752-226D-4AEC-9E20-CF2D6471A3A7}|InnoApi\\InnoApi.csproj|solutionrelative:innoapi\\dtos\\account\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{69DC7752-226D-4AEC-9E20-CF2D6471A3A7}|InnoApi\\InnoApi.csproj|c:\\users\\ege\\desktop\\innoapp\\innoapi\\dtos\\account\\newuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69DC7752-226D-4AEC-9E20-CF2D6471A3A7}|InnoApi\\InnoApi.csproj|solutionrelative:innoapi\\dtos\\account\\newuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{69DC7752-226D-4AEC-9E20-CF2D6471A3A7}|InnoApi\\InnoApi.csproj|c:\\users\\ege\\desktop\\innoapp\\innoapi\\dtos\\account\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69DC7752-226D-4AEC-9E20-CF2D6471A3A7}|InnoApi\\InnoApi.csproj|solutionrelative:innoapi\\dtos\\account\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,8 +11,32 @@
       "RelativeMoniker": "D:0:0:{69DC7752-226D-4AEC-9E20-CF2D6471A3A7}|InnoApi\\InnoApi.csproj|solutionrelative:innoapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{69DC7752-226D-4AEC-9E20-CF2D6471A3A7}|InnoApi\\InnoApi.csproj|c:\\users\\ege\\desktop\\innoapp\\innoapi\\dtos\\account\\newuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69DC7752-226D-4AEC-9E20-CF2D6471A3A7}|InnoApi\\InnoApi.csproj|solutionrelative:innoapi\\dtos\\account\\newuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{69DC7752-226D-4AEC-9E20-CF2D6471A3A7}|InnoApi\\InnoApi.csproj|c:\\users\\ege\\desktop\\innoapp\\innoapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69DC7752-226D-4AEC-9E20-CF2D6471A3A7}|InnoApi\\InnoApi.csproj|solutionrelative:innoapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69DC7752-226D-4AEC-9E20-CF2D6471A3A7}|InnoApi\\InnoApi.csproj|c:\\users\\ege\\desktop\\innoapp\\innoapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69DC7752-226D-4AEC-9E20-CF2D6471A3A7}|InnoApi\\InnoApi.csproj|solutionrelative:innoapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69DC7752-226D-4AEC-9E20-CF2D6471A3A7}|InnoApi\\InnoApi.csproj|c:\\users\\ege\\desktop\\innoapp\\innoapi\\models\\appusermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69DC7752-226D-4AEC-9E20-CF2D6471A3A7}|InnoApi\\InnoApi.csproj|solutionrelative:innoapi\\models\\appusermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69DC7752-226D-4AEC-9E20-CF2D6471A3A7}|InnoApi\\InnoApi.csproj|c:\\users\\ege\\desktop\\innoapp\\innoapi\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69DC7752-226D-4AEC-9E20-CF2D6471A3A7}|InnoApi\\InnoApi.csproj|solutionrelative:innoapi\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69DC7752-226D-4AEC-9E20-CF2D6471A3A7}|InnoApi\\InnoApi.csproj|c:\\users\\ege\\desktop\\innoapp\\innoapi\\dtos\\account\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69DC7752-226D-4AEC-9E20-CF2D6471A3A7}|InnoApi\\InnoApi.csproj|solutionrelative:innoapi\\dtos\\account\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69DC7752-226D-4AEC-9E20-CF2D6471A3A7}|InnoApi\\InnoApi.csproj|c:\\users\\ege\\desktop\\innoapp\\innoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69DC7752-226D-4AEC-9E20-CF2D6471A3A7}|InnoApi\\InnoApi.csproj|solutionrelative:innoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,7 +58,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoApi\\Models\\User.cs",
+              "RelativeDocumentMoniker": "InnoApi\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoApi\\Models\\User.cs",
+              "RelativeToolTip": "InnoApi\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T18:14:21.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppUserModel.cs",
+              "DocumentMoniker": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoApi\\Models\\AppUserModel.cs",
+              "RelativeDocumentMoniker": "InnoApi\\Models\\AppUserModel.cs",
+              "ToolTip": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoApi\\Models\\AppUserModel.cs",
+              "RelativeToolTip": "InnoApi\\Models\\AppUserModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T18:14:20.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoApi\\Program.cs",
+              "RelativeDocumentMoniker": "InnoApi\\Program.cs",
+              "ToolTip": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoApi\\Program.cs",
+              "RelativeToolTip": "InnoApi\\Program.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T13:14:50.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoApi\\Startup.cs",
+              "RelativeDocumentMoniker": "InnoApi\\Startup.cs",
+              "ToolTip": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoApi\\Startup.cs",
+              "RelativeToolTip": "InnoApi\\Startup.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T13:14:48.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "RegisterDto.cs",
               "DocumentMoniker": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoApi\\Dtos\\Account\\RegisterDto.cs",
               "RelativeDocumentMoniker": "InnoApi\\Dtos\\Account\\RegisterDto.cs",
@@ -50,12 +114,11 @@
               "RelativeToolTip": "InnoApi\\Dtos\\Account\\RegisterDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T21:11:17.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T21:11:17.75Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "NewUserDto.cs",
               "DocumentMoniker": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoApi\\Dtos\\Account\\NewUserDto.cs",
               "RelativeDocumentMoniker": "InnoApi\\Dtos\\Account\\NewUserDto.cs",
@@ -68,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoApi\\Dtos\\Account\\LoginDto.cs",
               "RelativeDocumentMoniker": "InnoApi\\Dtos\\Account\\LoginDto.cs",
@@ -81,28 +144,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoApi\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "InnoApi\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoApi\\Controllers\\AccountController.cs",
               "RelativeToolTip": "InnoApi\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAM0AAAAAAAAAAAAwwAAAAAAAAAAA",
+              "ViewState": "AQIAAIgAAAAAAAAAAAAxwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-28T20:57:55.862Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoApi\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "InnoApi\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\EGE\\Desktop\\InnoApp\\InnoApi\\Controllers\\UserController.cs",
               "RelativeToolTip": "InnoApi\\Controllers\\UserController.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "ViewState": "AQIAACAAAAAAAAAAAAAwwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T20:57:49.212Z"
+              "WhenOpened": "2024-08-28T20:57:49.212Z",
+              "EditorCaption": ""
             }
           ]
         }
